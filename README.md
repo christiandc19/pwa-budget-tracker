@@ -26,7 +26,7 @@
   ## DEPLOYMENT  
   ### https://christiandc19.github.io/pwa-budget-tracker/
   ### https://github.com/christiandc19/pwa-budget-tracker/
-  ### HEROKU link: https://git.heroku.com/track-your-budgt.git
+  ### HEROKU link: https://track-your-budgt.herokuapp.com/
   ------------------
   ## QUESTIONS  
   ### If you have any questions, you may contact me at:
