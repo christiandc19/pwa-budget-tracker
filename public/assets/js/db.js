@@ -41,6 +41,7 @@ function saveRecord(record) {
 }
 
 function uploadTransaction() {
+  console.log("Upload Transaction Triggered");
   // open a transaction on your db
   const transaction = db.transaction(["new-budget-tracker"], "readwrite");
 
@@ -49,6 +50,8 @@ function uploadTransaction() {
 
   // get all records from store and set to a variable
   const getAll = trackerObjectStore.getAll();
+
+    console.log("Get All pending records", getAll)
 
   // upon a successful .getAll() execution, run this function
   getAll.onsuccess = function () {
@@ -64,6 +67,7 @@ function uploadTransaction() {
       })
         .then((response) => response.json())
         .then((serverResponse) => {
+          console.log("server response", serverResponse)
           if (serverResponse.message) {
             throw new Error(serverResponse);
           }
